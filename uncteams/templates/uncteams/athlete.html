@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<ul class="breadcrumb">
+    <li><a href="../../">all sports</a> <span class="divider">/</span></li>
+    <li><a href="../team/1">Women's Cross Country </a><span class="divider">/</span></li>
+    <li class="active">{{ athlete.name }}</li>
+</ul>
+<h2>{{ athlete.name }}</h2>
+<p>Details</p>
+<img src="{{ athlete.imageURL }}" alt="{{ athlete.name }} photo"/>
+<ul>
+    <li><strong>Year:</strong> {{ athlete.year }}</li>
+    <li><strong>Hometown:</strong> {{ athlete.hometown }}</li>
+    <li><strong>Highschool:</strong> {{ athlete.highschool }}</li>
+    <li><strong>5k PR:</strong>{{ athlete.pr5k }}</li>
+</ul>
+{% endblock %}

@@ -1,0 +1,22 @@
+<!-- uncteams/templates/uncteams/home.html -->
+
+{% extends "base.html" %}
+{% load humanize %}
+{% load url from future %}
+
+{% block content %}
+    <p>[recent articles slider]</p>
+    <p>[ticket center button]</p>
+    
+    
+    <h2>Sports</h2>
+    <ul>
+    {% for team in teams %}
+    {# Each "athlete" is an athlete model object. #}
+    <li><a href="team/{{ team.id }}">{{ team.name }}</a></li>
+    {% endfor %}
+    </ul>
+
+
+
+{% endblock %}

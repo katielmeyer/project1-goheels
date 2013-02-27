@@ -1,0 +1,12 @@
+[
+    {
+        "pk":1,
+        "model": "uncteams.Team",
+        "fields": {
+            "name":"Women's Cross Country",
+            "headcoach":"Mark VanAlstyne",
+            "description":"The 2012-2013 UNC women's cross country team.",
+            "imageURL":"http://www.goheels.com/pics32/640/KI/KIBNDEMFRKORKNO.20121119205519.jpg"
+        }
+    }
+]

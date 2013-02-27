@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul class="breadcrumb">
+    <li><a href="../../">all sports</a> <span class="divider">/</span></li>
+    <li class="active">{{ team.name }}</li>
+</ul>
+<h2>{{ team.name }}</h2>
+<img src="{{ team.imageURL }}" alt="{{ team.name }} image" />
+<p>[schedule]</p>
+<p>Coaches</p>
+<ul>
+    <li>{{ team.headcoach }}</li>
+    <li>{{ team.description }}</li>
+     {% for coach in coaches %}
+    {# Each "athlete" is an athlete model object. #}
+    <li>{{ coach.name }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Athletes</h2>
+<p>[table with info]</p>
+    <table>
+        <thead>
+            <tr><th>Athlete</th><th>Year</th><th>Hometown</th><th>5k PR</th></tr>
+        </thead>
+    {% for athlete in athletes %}
+    {# Each "athlete" is an athlete model object. #}
+    <tr><td><a href="../athlete/{{ athlete.id }}">{{ athlete.name }}</a></td><td>{{ athlete.year }}</td><td>{{ athlete.hometown }}</td><td>{{ athlete.pr5k }}</td></tr>
+    
+{% endfor %}
+</table>
+
+<div class="pagination">
+    <span class="step-links">
+        {% if athletes.has_previous %}
+            <a href="?page={{ athletes.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ athletes.number }} of {{ athletes.paginator.num_pages }}.
+        </span>
+
+        {% if athletes.has_next %}
+            <a href="?page={{ athletes.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
+{% endblock %}
