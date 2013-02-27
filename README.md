@@ -1,0 +1,1 @@
+This is Project 1 of JOMC 583 (Advanced Multimedia Programming).
