@@ -54,11 +54,48 @@
     <li class="active">{{ team.name }}</li>
 </ul>
 <h1>{{ team.name }}</h1>
-<div class="row-fluid team-image-row">
-    <div class="span12">
-    <img src="{{ team.imageURL }}" alt="{{ team.name }} image" />
+<div class="row-fluid">
+        <div class="span12">
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+            <div class="active item">
+                <img src="{{ team.imageURL }}" alt="slider"/>
+                <div class="carousel-caption">
+                      <h4><a href="#">Six Earn All-ACC Academic For 2012 XC</a></h4>
+                        <p>Malia Cali, Lianne Farber, Annie LeHardy, Ashley Miess,
+                        Karley Rempel and Isaac Presson earned All-ACC Academic honors
+                        as announced Wednesday by the conference.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.goheels.com/pics32/640/RK/RKNGWSYMLWLDLGM.20130104154542.jpg" alt="slider"/>
+                <div class="carousel-caption">
+                      <h4><a href="#">Bracy Will Run With USATF Saturday</a></h4>
+                      <p>Addie Bracy, a former distance runner and volunteer coach at Carolina, has made the
+                      USA Track & Field senior women's team and will compete in Scotland on Saturday.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.goheels.com/pics32/640/HV/HVFCUKPEMIZODKO.20121117181613.jpg" alt="slider"/>
+                <div class="carousel-caption">
+                      <h4>Farber Places 40th, Deemed All-America</h4>
+                      <p>Lianne Farber earns All-America honors for her finish at the 2012 NCAA Cross Country National Championship.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
     </div>
-</div>
+    <!--end carousel-->
 <div class="row-fluid">
     <div class="span6">
     <h3>Schedule</h3>
@@ -108,7 +145,7 @@
             
             </table>
         
-        <div class="pagination pagination-large">
+        <div class="pagination pull-right">
             <span class="step-links">
                 {% if athletes.has_previous %}
                     <a href="?page={{ athletes.previous_page_number }}">«</a>

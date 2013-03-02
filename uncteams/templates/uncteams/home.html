@@ -48,6 +48,8 @@
                     <li><a href="#">Fan Center</a></li>
 {% endblock %}
 {% block content %}
+    <div class="row-fluid">
+        <div class="span12">
         <div id="myCarousel" class="carousel slide">
             <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -118,11 +120,13 @@
                       </ul>
                 </div>
             </div>
+            </div>
         </div>
         <!-- Carousel nav -->
             <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
             <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
+    </div>
     <!--end carousel-->
     <div class="row-fluid">
         <div class="span6">
@@ -185,7 +189,7 @@
                 <li class="span4 pull-left">
                 <a href="#" class="thumbnail">
                 <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-fieldhockey.jpg" alt=""/>
-                <p>Women's Fieldhockey</p>
+                <p>Women's Field Hockey</p>
                 </a>
                 </li>
             </div>
