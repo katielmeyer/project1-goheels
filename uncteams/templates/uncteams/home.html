@@ -146,15 +146,103 @@
         <h1>Sports</h1>
         <ul class="thumbnails">
             <!--build sports thumbnails from data-->
-            {% for team in teams %}
-            {# Each "athlete" is an athlete model object. #}
-            <li class="span4 pull-left">
-            <a href="team/{{ team.id }}" class="thumbnail">
-            <img data-src="holder.js/300x200" src="{{ team.imageURL }}" alt="{{ team.name }}"/>
-            <p>{{ team.name }}</p>
-            </a>
-            </li>
-            {% endfor %}
+            <div class="row-fluid">
+                {% for team in teams %}
+                {# Each "athlete" is an athlete model object. #}
+                <li class="span4 pull-left">
+                <a href="team/{{ team.id }}" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ team.imageURL }}" alt="{{ team.name }}"/>
+                <p>{{ team.name }}</p>
+                </a>
+                </li>
+                {% endfor %}
+                <li class="span4 pull-left">
+                <a href="#" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-baseball.jpg" alt=""/>
+                <p>Men's Baseball</p>
+                </a>
+                </li>
+                <li class="span4 pull-left">
+                <a href="#" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-basketball.jpg" alt=""/>
+                <p>Men's Basketball</p>
+                </a>
+                </li>
+            </div>
+            <div class="row-fluid">
+                <li class="span4 pull-left">
+                <a href="#" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-basketball-w.jpg" alt=""/>
+                <p>Women's Basketball</p>
+                </a>
+                </li>
+                <li class="span4 pull-left">
+                <a href="#" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-fencing.jpg" alt=""/>
+                <p>Men's Fencing</p>
+                </a>
+                </li>
+                <li class="span4 pull-left">
+                <a href="#" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-fieldhockey.jpg" alt=""/>
+                <p>Women's Fieldhockey</p>
+                </a>
+                </li>
+            </div>
+            <div class="row-fluid">
+                <li class="span4 pull-left">
+                <a href="#" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-football.jpg" alt=""/>
+                <p>Men's Football</p>
+                </a>
+                </li>
+                <li class="span4 pull-left">
+                <a href="#" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-golf-m.jpg" alt=""/>
+                <p>Men's Golf</p>
+                </a>
+                </li>
+                <li class="span4 pull-left">
+                <a href="#" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-golf-w.jpg" alt=""/>
+                <p>Women's Golf</p>
+                </a>
+                </li>
+            </div>
+            <div class="row-fluid">
+                <li class="span4 pull-left">
+                <a href="#" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-soccer-m.jpg" alt=""/>
+                <p>Men's Soccer</p>
+                </a>
+                </li>
+                <li class="span4 pull-left">
+                <a href="#" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-soccer-w.jpg" alt=""/>
+                <p>Women's Soccer</p>
+                </a>
+                </li>
+                <li class="span4 pull-left">
+                <a href="#" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-swimming-m.jpg" alt=""/>
+                <p>Men's Swimming &amp; Diving</p>
+                </a>
+                </li>
+            </div>
+            <div class="row-fluid">
+                <li class="span4 pull-left">
+                <a href="#" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-swimming-w.jpg" alt=""/>
+                <p>Women's Swimming &amp; Diving</p>
+                </a>
+                </li>
+                <li class="span4 pull-left">
+                <a href="#" class="thumbnail">
+                <img data-src="holder.js/300x200" src="{{ STATIC_URL }}img/sports-tennis-m.jpg" alt=""/>
+                <p>Men's Tennis</p>
+                </a>
+                </li>
+            </div>
         </ul>
     </div>
     </div>
