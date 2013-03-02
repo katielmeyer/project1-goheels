@@ -1,25 +1,91 @@
 {% extends "base.html" %}
 
+{% block nav %}
+    <li class="dropdown active pull-left">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Sports
+                        <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-header">Men's Sports</li>
+                            <li><a href="#">Baseball</a></li>
+                            <li><a href="#">Basketball</a></li>
+                            <li><a href="#">Cross Country</a></li>
+                            <li><a href="#">Fencing</a></li>
+                            <li><a href="#">Football</a></li>
+                            <li><a href="#">Golf</a></li>
+                            <li><a href="#">Lacrosse</a></li>
+                            <li><a href="#">Soccer</a></li>
+                            <li><a href="#">Swimming &amp; Diving</a></li>
+                            <li><a href="#">Tennis</a></li>
+                            <li><a href="#">Track &amp; Field</a></li>
+                            <li><a href="#">Wrestling</a></li>
+                            <li class="divider"></li>
+                            <li clas="nav-header">Women's Sports</li>
+                            <li><a href="#">Basketball</a></li>
+                            <li class="active"><a href="team/1">Cross Country</a></li>
+                            <li><a href="#">Fencing</a></li>
+                            <li><a href="#">Field Hockey</a></li>
+                            <li><a href="#">Golf</a></li>
+                            <li><a href="#">Gymnastics</a></li>
+                            <li><a href="#">Lacrosse</a></li>
+                            <li><a href="#">Rowing</a></li>
+                            <li><a href="#">Soccer</a></li>
+                            <li><a href="#">Softball</a></li>
+                            <li><a href="#">Tennis</a></li>
+                            <li><a href="#">Track &amp; Field</a></li>
+                            <li><a href="#">Volleyball</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Inside Athletics</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Fan Center</a></li>
+{% endblock %}
 {% block content %}
 <ul class="breadcrumb">
     <li><a href="../../">all sports</a> <span class="divider">/</span></li>
     <li class="active">{{ team.name }}</li>
 </ul>
-<h2>{{ team.name }}</h2>
-<img src="{{ team.imageURL }}" alt="{{ team.name }} image" />
-<p>[schedule]</p>
-<p>Coaches</p>
-<ul>
-    <li>{{ team.headcoach }}</li>
-    <li>{{ team.description }}</li>
-     {% for coach in coaches %}
-    {# Each "athlete" is an athlete model object. #}
-    <li>{{ coach.name }}</li>
-    {% endfor %}
-</ul>
-
-<h2>Athletes</h2>
-<p>[table with info]</p>
+<h1>{{ team.name }}</h1>
+<div class="row-fluid team-image-row">
+    <div class="span12">
+    <img src="{{ team.imageURL }}" alt="{{ team.name }} image" />
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span6">
+    <h2>Schedule</h2>
+    <table class="table-schedule">
+        <thead>
+            <tr><th>Date</th><th>Opponent</th><th>Location</th><th>Time (ET)</th></tr>
+        </thead>
+        <tr><td>Fri, Aug 31</td><td>Covered Bridge Open</td><td>Boone, NC</td><td>5:00pm</td></tr>
+        <tr><td>Fri, Sep 14</td><td>adidas Invitational</td><td>Raleigh, NC</td><td>5:15pm</td></tr>
+        <tr><td>Fri, Sep 28</td><td>Notre Dame Invitational</td><td>South Bend, IN</td><td>2:00pm</td></tr>
+        <tr><td>Fri, Oct 12</td><td>Wisconsin Invitational</td><td>Madison, WI</td><td>1:45pm</td></tr>
+        <tr><td>Sat, Oct 27</td><td>ACC Championships</td><td>Blacksburg, VA</td><td>10:00am</td></tr>
+        <tr><td>Sat, Nov 03</td><td>Three Stripe Invitational</td><td>Raleigh, NC</td><td>11:00am</td></tr>
+        <tr><td>Sat, Nov 17</td><td>NCAA Championships</td><td>Louisville, KY</td><td>12:00pm</td></tr>
+    </table>
+    </div>
+    <div class="span6">
+    <h2>Coaches</h2>
+        <table class="table-coaches">
+            <thead>
+                <tr><th></th><th>Coach</th><th>Position</th><th>Years exp</th></tr>
+            </thead>
+        {% for coach in coaches %}
+        {# Each "coach" is a coach model object. #}
+        <tr><td><img src="{{ coach.imageURL }}" alt="{{ coach.name }} photo" /></td>
+            <td>{{ coach.name }}</a></td><td>{{ coach.position }}</td><td>{{ coach.yearsexp }}</td></tr>
+        
+        {% endfor %}
+        </table>
+    </div>
+</div>
+<h1>Athletes</h1>
     <table>
         <thead>
             <tr><th>Athlete</th><th>Year</th><th>Hometown</th><th>5k PR</th></tr>
@@ -28,21 +94,21 @@
     {# Each "athlete" is an athlete model object. #}
     <tr><td><a href="../athlete/{{ athlete.id }}">{{ athlete.name }}</a></td><td>{{ athlete.year }}</td><td>{{ athlete.hometown }}</td><td>{{ athlete.pr5k }}</td></tr>
     
-{% endfor %}
-</table>
+    {% endfor %}
+    </table>
 
-<div class="pagination">
+<div class="pagination pagination-large">
     <span class="step-links">
         {% if athletes.has_previous %}
-            <a href="?page={{ athletes.previous_page_number }}">previous</a>
+            <a href="?page={{ athletes.previous_page_number }}">«</a>
         {% endif %}
 
         <span class="current">
-            Page {{ athletes.number }} of {{ athletes.paginator.num_pages }}.
+            Page {{ athletes.number }} of {{ athletes.paginator.num_pages }}
         </span>
 
         {% if athletes.has_next %}
-            <a href="?page={{ athletes.next_page_number }}">next</a>
+            <a href="?page={{ athletes.next_page_number }}">»</a>
         {% endif %}
     </span>
 </div>

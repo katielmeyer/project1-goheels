@@ -24,7 +24,7 @@ def team(request, pk):
     #is this the right call to activate coaches?..
     coach_list = Coach.objects.all()
     athlete_list = Athlete.objects.all()
-    paginator = Paginator(athlete_list, 25)
+    paginator = Paginator(athlete_list, 20)
     page = request.GET.get('page')
     try:
         athletes= paginator.page(page)
@@ -34,7 +34,7 @@ def team(request, pk):
     except EmptyPage:
         # If page is out of range (e.g. 9999), deliver last page of results.
         athletes = paginator.page(paginator.num_pages)
-    return render(request, "uncteams/team.html", {"athletes": athletes,"team": team})
+    return render(request, "uncteams/team.html", {"athletes": athletes,"team": team, "coaches":coach_list})
     #need to pass something to represent coaches...
    
 def athlete(request, pk):

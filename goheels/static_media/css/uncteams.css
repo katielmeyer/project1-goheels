@@ -1,14 +1,73 @@
+/*------------------------------
+ *Base template
+ *--------------------------------*/
 body {
-    background-color: #333333;
+   /* background-color: #333333;*/
 }
 h1 {
-    color: #f2f2f2;
+  
     margin-left:50px;
 }
-#goheels-banner {
-    background-color:#296187;
-}
 .container {
-    background-color:#f2f2f2;
+    /*background-color:#f2f2f2;*/
     margin: 0 auto;
+}
+.navbar-inner{
+    min-height:50px;
+}
+.nav {
+    padding-top:5px;
+}
+/*------------------------------
+ *Home template
+ *--------------------------------*/
+a.thumbnail {
+    height: auto;
+    
+}
+a.thumbnail p {
+    padding: 10px 30px 0 0;
+}
+}
+.thumbnail img {
+    max-width:200px
+}
+.carousel {
+    background-color:#333;
+}
+.carousel-caption {
+    height:170px;
+}
+.home-headlines {
+
+}
+.home-headlines p {
+    padding-top:5px;
+    padding-left:20px;
+}
+/*-------------------------------
+ *Team detail template
+ *------------------------------*/
+.team-image-row {
+    background-color:#f2f2f2;
+    width:100%;
+}
+.table-schedule {
+    display:block;
+    margin:0 auto;
+}
+.table-schedule td, th{
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+}
+.table-coaches {
+    display:block;
+    margin:0 auto;
+}
+.table-coaches td, th{
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+}
+.table-coaches img {
+    max-width:100px;
 }

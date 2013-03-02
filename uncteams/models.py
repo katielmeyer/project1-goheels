@@ -53,6 +53,7 @@ class Coach(models.Model):
     yearsexp = models.IntegerField(unique=False, max_length=3, null=True)
     emailAdd = models.CharField(unique=False, max_length=50, null=True)
     bio = models.CharField(unique=False, null=True, max_length=300)
+    imageURL = models.CharField(unique=False, max_length=200)
 
     
     class Meta(object):

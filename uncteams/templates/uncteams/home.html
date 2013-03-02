@@ -4,19 +4,158 @@
 {% load humanize %}
 {% load url from future %}
 
+{% block nav %}
+    <li class="dropdown active pull-left">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Sports
+                        <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-header">Men's Sports</li>
+                            <li><a href="#">Baseball</a></li>
+                            <li><a href="#">Basketball</a></li>
+                            <li><a href="#">Cross Country</a></li>
+                            <li><a href="#">Fencing</a></li>
+                            <li><a href="#">Football</a></li>
+                            <li><a href="#">Golf</a></li>
+                            <li><a href="#">Lacrosse</a></li>
+                            <li><a href="#">Soccer</a></li>
+                            <li><a href="#">Swimming &amp; Diving</a></li>
+                            <li><a href="#">Tennis</a></li>
+                            <li><a href="#">Track &amp; Field</a></li>
+                            <li><a href="#">Wrestling</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Women's Sports</li>
+                            <li><a href="#">Basketball</a></li>
+                            <li><a href="team/1">Cross Country</a></li>
+                            <li><a href="#">Fencing</a></li>
+                            <li><a href="#">Field Hockey</a></li>
+                            <li><a href="#">Golf</a></li>
+                            <li><a href="#">Gymnastics</a></li>
+                            <li><a href="#">Lacrosse</a></li>
+                            <li><a href="#">Rowing</a></li>
+                            <li><a href="#">Soccer</a></li>
+                            <li><a href="#">Softball</a></li>
+                            <li><a href="#">Tennis</a></li>
+                            <li><a href="#">Track &amp; Field</a></li>
+                            <li><a href="#">Volleyball</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Inside Athletics</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Fan Center</a></li>
+{% endblock %}
 {% block content %}
-    <p>[recent articles slider]</p>
-    <p>[ticket center button]</p>
-    
-    
-    <h2>Sports</h2>
-    <ul>
-    {% for team in teams %}
-    {# Each "athlete" is an athlete model object. #}
-    <li><a href="team/{{ team.id }}">{{ team.name }}</a></li>
-    {% endfor %}
-    </ul>
-
-
-
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+            <div class="active item">
+                <img src="{{ STATIC_URL }}img/goheels-slider1.jpg" alt="slider"/>
+                <div class="carousel-caption">
+                      <h4>Tar Heels Beat Tigers, 68-59</h4>
+                      <p>North Carolina reached the 20-win mark for the ninth straight
+                      season with a 68-59 victory over Clemson on Thursday night.</p>
+                      <ul>
+                        <li><a href="#">Lucas: That Awkward Moment</a>
+			</li>
+	            	<li><a href="#">Box Score</a>
+			</li>
+	            	<li><a href="#">Watch Highlights</a>
+			</li>
+                        <li><a href="#">Postgame Notes</a>
+			</li>
+                      </ul>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ STATIC_URL }}img/goheels-slider2.jpg" alt="slider"/>
+                <div class="carousel-caption">
+                      <h4>UNC Tops Eagles 85-57 On Senior Night</h4>
+                      <p>Seniors Tierra Ruffin-Pratt and Waltiea Rolle led the North Carolina
+                      women's basketball in its 85-57
+                      victory over Boston College in Carmichael Arena on Thursday night.</p>
+                    <ul>
+                        <li><a href="#">Box Score</a>
+			</li>
+	            	<li><a href="#">Watch Highlights</a>
+			</li>
+                        <li><a href="#">Postgame Notes</a>
+			</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ STATIC_URL }}img/goheels-slider3.jpg" alt="slider"/>
+                <div class="carousel-caption">
+                      <h4>Tough Tests Await No. 1 Heels In Houston</h4>
+                      <p>No. 1 North Carolina heads to Houston, Texas for the Astros Foundation
+                      College Classic with matchups against
+                      No. 12 Rice, California and No. 30 Texas A&M.</p>
+                      <ul>
+                        <li><a href="#">Astros Foundation College Classic</a></li>
+                      </ul>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ STATIC_URL }}img/goheels-slider4.jpg" alt="slider"/>
+                <div class="carousel-caption">
+                      <h4>Carolina Heads To No. 2 Notre Dame</h4>
+                      <p>North Carolina's men's lacrosse team will face its biggest challenge
+                      of the 2013 season to date when it plays at
+                      second-ranked Notre Dame Saturday at 12 noon.</p>
+                      <ul>
+                        <li><a href="#">UNC-Notre Dame Gametracker</a></li>
+                        <li><a href="#">2013 UNC Media Guide</a></li>
+                        <li><a href="#">2013 UNC Stats</a></li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+    <!--end carousel-->
+    <div class="row-fluid">
+        <div class="span6">
+            <h4>Twitter</h4>
+            <img src="{{ STATIC_URL }}img/tweet-screenshot.jpg" alt="tweets"/>
+        </div>
+        <div class="span6 home-headlines">
+            <h4>More Headlines</h4>
+            <p><strong><em>Swimming & Diving: </em></strong><a href="#">UNC Swimmers Fourth at ACC Championships</a></p>
+            <p><strong><em>Football: </em></strong><a href="#">Roger Goodell to Speak on Campus</a></p>
+            <p><strong><em>Men's Basketball: </em></strong><a href="#">Lucas: The Sixth Man</a></p>
+            <p><strong><em>Field Hockey: </em></strong><a href="#">Six From UNC Earn Academic All-ACC Nods</a></p>
+            <p><strong><em>Baseball: </em></strong><a href="#">No. 1 UNC Rolls Past St. John's, 18-5</a></p>
+            <p><strong><em>Wrestling: </em></strong><a href="#">NCAA Wrestling Allocations Announced</a></p>
+            <p><strong><em>Track &amp; Field: </em></strong><a href="#">Heels Head to Last Chance Meets</a></p>
+        </div>
+    </div>
+    <hr/>
+    <div class="row-fluid">
+        <div class="span10">
+        <h1>Sports</h1>
+        <ul class="thumbnails">
+            <!--build sports thumbnails from data-->
+            {% for team in teams %}
+            {# Each "athlete" is an athlete model object. #}
+            <li class="span4 pull-left">
+            <a href="team/{{ team.id }}" class="thumbnail">
+            <img data-src="holder.js/300x200" src="{{ team.imageURL }}" alt="{{ team.name }}"/>
+            <p>{{ team.name }}</p>
+            </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    </div>
 {% endblock %}

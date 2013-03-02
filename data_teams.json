@@ -8,5 +8,95 @@
             "description":"The 2012-2013 UNC women's cross country team.",
             "imageURL":"http://www.goheels.com/pics32/640/KI/KIBNDEMFRKORKNO.20121119205519.jpg"
         }
+    },
+    {
+        "pk":2,
+        "model": "uncteams.Team",
+        "fields": {
+            "name":"Men's Baseball",
+            "headcoach":"",
+            "description":"",
+            "imageURL":"http://image.cdnllnwnl.xosnetwork.com/pics32/640/XZ/XZQIWYPQJHFYLDD.20130224213203.jpg"
+        }
+    },
+    {
+        "pk":3,
+        "model": "uncteams.Team",
+        "fields": {
+            "name":"Men's Basketball",
+            "headcoach":"",
+            "description":"",
+            "imageURL":"http://www.goheels.com/pics32/640/IP/IPJPFFTFSHNGJOV.20130224001828.jpg"
+        }
+    },
+    {
+        "pk":4,
+        "model": "uncteams.Team",
+        "fields": {
+            "name":"Men's Fencing",
+            "headcoach":"",
+            "description":"",
+            "imageURL":"http://www.goheels.com/pics32/640/AT/ATVNGVVEDCCGNRM.20121203231512.jpg"
+        }
+    },
+    {
+        "pk":5,
+        "model": "uncteams.Team",
+        "fields": {
+            "name":"Men's Football",
+            "headcoach":"",
+            "description":"",
+            "imageURL":"http://www.goheels.com/pics32/640/BT/BTTCXAFPTQBWAPO.20121019005303.jpg"
+        }
+    },
+    {
+        "pk":6,
+        "model": "uncteams.Team",
+        "fields": {
+            "name":"Women's Soccer",
+            "headcoach":"",
+            "description":"",
+            "imageURL":"http://image.cdnllnwnl.xosnetwork.com/pics32/640/BD/BDRFSKLWPXVGLSI.20120619213452.jpeg"
+        }
+    },
+    {
+        "pk":7,
+        "model": "uncteams.Team",
+        "fields": {
+            "name":"Women's Softball",
+            "headcoach":"",
+            "description":"",
+            "imageURL":"http://www.goheels.com/pics32/640/SO/SOYYLSZWTNKGQWA.20130222031502.jpg"
+        }
+    },
+    {
+        "pk":8,
+        "model": "uncteams.Team",
+        "fields": {
+            "name":"Women's Lacrosse",
+            "headcoach":"",
+            "description":"",
+            "imageURL":"http://www.goheels.com/pics32/640/AK/AKQWZIUDYMMDMLT.20130223065147.jpg"
+        }
+    },
+    {
+        "pk":9,
+        "model": "uncteams.Team",
+        "fields": {
+            "name":"Men's Lacrosse",
+            "headcoach":"",
+            "description":"",
+            "imageURL":"http://image.cdnllnwnl.xosnetwork.com/pics32/640/AW/AWLPUMUYHSBEEXE.20130223230822.jpg"
+        }
+    },
+    {
+        "pk":10,
+        "model": "uncteams.Team",
+        "fields": {
+            "name":"Men's Wrestling",
+            "headcoach":"",
+            "description":"",
+            "imageURL":"http://www.goheels.com/pics32/640/OC/OCSIHWWRSWZDGNP.20130202021951.jpg"
+        }
     }
 ]
