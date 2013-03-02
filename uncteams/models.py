@@ -29,6 +29,8 @@ class Athlete(models.Model):
     hometown = models.CharField(unique=False, max_length=50, null=True)
     imageURL = models.CharField(unique=False, max_length=200)
     pr5k = models.CharField(unique=False, max_length=10, null=True)
+    prmile = models.CharField(unique=False, max_length=10, null=True)
+    pr800 = models.CharField(unique=False, max_length=10, null=True)
     position = models.CharField(unique=False, max_length=10, null=True)
     height = models.IntegerField(unique=False, max_length=5, null=True)
     weight = models.IntegerField(unique=False, max_length=3, null=True)
@@ -38,6 +40,7 @@ class Athlete(models.Model):
     favtv = models.CharField(unique=False, max_length=20, null=True)
     favbook = models.CharField(unique=False, max_length=20, null=True)
     favartist = models.CharField(unique=False, max_length=20, null=True)
+    bio = models.CharField(unique=False, null=True, max_length=500)
     
     class Meta(object):
         verbose_name_plural = "Athletes"

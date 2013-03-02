@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block scripts %}
+    <script>
+    </script>
+{% endblock %}
+
 {% block nav %}
     <li class="dropdown active pull-left">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -56,7 +61,7 @@
 </div>
 <div class="row-fluid">
     <div class="span6">
-    <h2>Schedule</h2>
+    <h3>Schedule</h3>
     <table class="table-schedule">
         <thead>
             <tr><th>Date</th><th>Opponent</th><th>Location</th><th>Time (ET)</th></tr>
@@ -71,7 +76,7 @@
     </table>
     </div>
     <div class="span6">
-    <h2>Coaches</h2>
+    <h3>Coaches</h3>
         <table class="table-coaches">
             <thead>
                 <tr><th></th><th>Coach</th><th>Position</th><th>Years exp</th></tr>
@@ -85,31 +90,41 @@
         </table>
     </div>
 </div>
-<h1>Athletes</h1>
-    <table>
-        <thead>
-            <tr><th>Athlete</th><th>Year</th><th>Hometown</th><th>5k PR</th></tr>
-        </thead>
-    {% for athlete in athletes %}
-    {# Each "athlete" is an athlete model object. #}
-    <tr><td><a href="../athlete/{{ athlete.id }}">{{ athlete.name }}</a></td><td>{{ athlete.year }}</td><td>{{ athlete.hometown }}</td><td>{{ athlete.pr5k }}</td></tr>
-    
-    {% endfor %}
-    </table>
-
-<div class="pagination pagination-large">
-    <span class="step-links">
-        {% if athletes.has_previous %}
-            <a href="?page={{ athletes.previous_page_number }}">«</a>
-        {% endif %}
-
-        <span class="current">
-            Page {{ athletes.number }} of {{ athletes.paginator.num_pages }}
-        </span>
-
-        {% if athletes.has_next %}
-            <a href="?page={{ athletes.next_page_number }}">»</a>
-        {% endif %}
-    </span>
+<hr/>
+<div class="row-fluid">
+    <div class="span12">
+        <h2>Roster</h2>
+            <table class="table-roster">
+                <thead>
+                    <tr><th>Athlete</th><th>Year</th><th>Hometown</th><th>Highschool</th>
+                        <th>5k PR</th><th>Mile PR</th><th>800 PR</th></tr>
+                </thead>
+            {% for athlete in athletes %}
+            {# Each "athlete" is an athlete model object. #}
+            <tr><td><a id="pop{{ athlete.id }}" href="../athlete/{{ athlete.id }}">{{ athlete.name }}</a></td>
+                <td>{{ athlete.year }}</td><td>{{ athlete.hometown }}</td><td>{{ athlete.highschool }}</td>
+            <td>{{ athlete.pr5k }}</td><td>{{ athlete.prmile }}</td><td>{{ athlete.pr800 }}</td></tr>
+            
+            
+            {% endfor %}
+            
+            </table>
+        
+        <div class="pagination pagination-large">
+            <span class="step-links">
+                {% if athletes.has_previous %}
+                    <a href="?page={{ athletes.previous_page_number }}">«</a>
+                {% endif %}
+        
+                <span class="current">
+                    Page {{ athletes.number }} of {{ athletes.paginator.num_pages }}
+                </span>
+        
+                {% if athletes.has_next %}
+                    <a href="?page={{ athletes.next_page_number }}">»</a>
+                {% endif %}
+            </span>
+    </div>
+</div>
 </div>
 {% endblock %}

@@ -9,7 +9,13 @@
             "hometown": "Louisville, KY",
             "highschool": "Sacred Heart Academy",
             "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/QZ/QZXAHUTQCZIATEH.20120820151650.jpg",
-            "pr5k": "17:25"
+            "pr5k": "17:25",
+            "prmile": "4:52.51",
+            "pr800": "2:13.26",
+            "hobbies": "Water skiing, baking",
+            "favtv": "Modern Family, How I Met Your Mother",
+            "favartist": "Mumford and Sons",
+            "bio": "Majoring in business and plans pursue a career in CPA/accounting. Has one brother and one sister. Emma Elizabeth Brink is the daughter of Julie and David Brink.Born April 7, 1993."
         }
     },
     {
@@ -22,7 +28,15 @@
             "hometown": "Hammond, LA",
             "highschool": "St Thomas Aquinas High School",
             "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/YR/YRXTJYLXNLHTKNX.20120820151650.jpg",
-            "pr5k": "18:10"
+            "pr5k": "18:10",
+            "prmile": "4:56",
+            "pr800": "2:17",
+            "hobbies": "Soccer, beach volleyball, spending time with friends and family",
+            "favtv": "Modern Family, Pretty Little Liars",
+            "favartist": "Jack Johnson",
+            "favbook": "Hunger Games",
+            "favfood": "Watermelon",
+            "bio": "Majoring in biology. Career plans are to work in physical therapy and sports medicine. Malia Gisele Cali is the daughter of Gisele and Frankie. Born September 19, 1992."
         }
     },
     {
@@ -35,7 +49,13 @@
             "hometown": "Northport, NY",
             "highschool": "Northport",
             "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/IX/IXUOKOYXTMHUGIY.20120820151650.jpg",
-            "pr5k": "17:00"
+            "pr5k": "17:00",
+            "prmile": "4:41",
+            "pr800": "2:09",
+            "hobbies": "Arts and crafts",
+            "favtv": "Dexter, Breaking Bad",
+            "favfood": "Bacon",
+            "bio": "Majoring in advertising at the School of Journalism and Mass Communication. Before she discovered running, Lianne was a competitive sailor and an aspiring actress. Lianne Jessica Farber is the daughter of Jesse and Cathy. Born June 12, 1992."
         }
     },
     {
@@ -48,7 +68,13 @@
         "hometown": "Cary, NC",
         "highschool": "Cary Christian School",
         "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/JW/JWMJXBDTMNONTGK.20120820151650.jpg",
-            "pr5k": "19:04"
+        "pr5k": "19:04",
+        "prmile": "5:18",
+        "pr800": "2:34",
+            "favtv": "Law and Order: SVU",
+            "favfood": "Pasta",
+            "favartist": "Death Cab for Cutie",
+            "bio": "Enrolled in the general college. Aundrea Catherine Holmes is the daughter of Bonnie and Paul Holmes. Born November 22, 1993."
             }
     },
     {
@@ -61,7 +87,14 @@
         "hometown": "Pawling, NY",
         "highschool": "Pawling High School",
             "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/QI/QIGIVGCUMPEXTAE.20120820151650.jpg",
-            "pr5k": "17:39"
+            "pr5k": "17:39",
+        "prmile": "4:55",
+        "hobbies": "Cooking, hockey",
+            "favtv": "Criminal Minds, How I Met Your Mother",
+            "favfood": "Eggplant Parmesan",
+            "favartist": "Jason Mraz, Childish Gambino",
+            "favbook": "A Tree Grows in Brooklyn",
+            "bio": "Enrolled in the general college. Samantha Taylor Jorgensen has two brothers and is the daughter of Gina and Van Jorgensen. Born March 13, 1993."
         }
     },
     {
@@ -74,7 +107,13 @@
         "hometown": "Roanoke, VA",
         "highschool": "Hidden Valley High School",
             "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/DF/DFKSUQEDBDVEZPU.20120820151650.jpg",
-            "pr5k": "17:18"
+            "pr5k": "17:18",
+            "prmile": "4:55",
+            "pr800":"2:15",
+            "favfood": "Anything made by my mom",
+            "favartist": "America",
+            "favbook": "The Harry Potter series",
+            "bio": "Enrolled in the general college. Her older brother ran track and cross country at the U.S. Military Academy at West Point. Anne Houston LeHardy is the daughter of Nancy and Marcel LeHardy. Born October 18, 1992."
             }
     },
     {
@@ -87,7 +126,12 @@
         "hometown": "Weston, FL",
         "highschool": "Cypress Bay",
             "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/VK/VKEUCKGTEHJFMHY.20120820151650.jpg",
-            "pr5k": "20:50"
+            "pr5k": "20:50",
+            "favfood": "Cooking and jigsaw puzzles",
+            "favtv": "Still Standing",
+            "favbook": "A Life Without Limit",
+            "favartist": "Shakira",
+            "bio": "Attending the School of Pharmacy. Mariana Lucena is the daughter of Nelson and Ana Maria Lucena. Born October 12, 1990 in Medellín, Colombia."
          }
     },
     {
@@ -100,7 +144,10 @@
         "hometown": "Hampton, NH",
         "highschool": "Portsmouth Christian Academy",
             "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/CJ/CJZLRHUTQDMRJEE.20120820151651.jpg",
-            "pr5k": "17:12"
+            "pr5k": "17:12",
+            "prmile": "4:42",
+            "pr800":"2:34",
+            "bio": " Double majoring in public relations and communications. Kylie Elizabeth McCoy is the daughter of Jacqueline and Joseph McCoy. Born December 1, 1992."
          }
     },
     {
@@ -112,9 +159,16 @@
         "year": "RJr.",
         "hometown": "Weddington, NC",
         "highschool": "Charlotte Latin",
-            "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/PO/POEPYTSHRYRPRRI.20120820151651.jpg",
-            "pr5k": "17:25"
-            }
+        "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/PO/POEPYTSHRYRPRRI.20120820151651.jpg",
+        "pr5k": "17:25",
+        "prmile": "4:51",
+        "bio": "Majoring in public relations in the School of Journalism and Mass Communication. Ashley Lynn Miess is the daughter of Michael and Lynn Miess. Born February 26, 1991.",
+        "hobbies":"Shopping, waterskiing, wakeboarding",
+        "favfood":"PB&J",
+        "favtv":"Gossip Girl, Modern Family",
+        "favbook": "A Life Without Limits",
+        "favartist": "Taylor Swift"
+           }
     },
     {
         "pk":10,
@@ -124,8 +178,15 @@
         "team": "1",
         "year": "So.",
         "hometown": "Ottawa, Canada",
-            "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/CG/CGTNVJYQPRWSNFI.20120820151651.jpg",
-            "pr5k": "18:08"
+        "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/CG/CGTNVJYQPRWSNFI.20120820151651.jpg",
+        "pr5k": "18:08",
+        "prmile": "5:01",
+        "pr800": "2:36",
+        "favfood": "Cyclones",
+        "favtv": "Entourage, Curb Your Enthusiasm",
+        "favbook": "The Picture of Dorian Gray",
+        "favartist": "Bon Iver",
+        "bio":"Enrolled in the general college. Emma Norman is the daughter of Nancy and Tim Norman. Born August 17, 1993."
             
             }
     },
@@ -139,7 +200,14 @@
         "hometown": "East Setauket, NY",
         "highschool": "Ward Melville",
             "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/CE/CEQHXTUKAYZWPSP.20120820151651.jpg",
-            "pr5k": "18:06"
+            "pr5k": "18:06",
+            "prmile":"4:51",
+            "pr800":"2:20",
+            "bio": "Plans to major in nursing. Caroline Elizabeth O’Hea is the daughter of Denise and Brian O’Hea. Born December 28, 1994.",
+            "hobbies": "Running, sports, the beach",
+            "favfood": "Pasta",
+            "favtv": "Friends",
+            "favartist": "Zac Brown Band"
             }
     },
     {
@@ -151,8 +219,16 @@
         "year": "So.",
         "hometown": "Ontario, Canada",
         "highschool": "EL Crossley Secondary School",
-            "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/EO/EOBQEPCDOWMKTWI.20120820151651.jpg",
-            "pr5k": "17:51"
+        "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/EO/EOBQEPCDOWMKTWI.20120820151651.jpg",
+        "pr5k": "17:51",
+        "prmile": "4:34",
+        "pr800":"2:11",
+        "hobbies":"Baking and hiking",
+        "favfood": "Candy, chocolate, and gummies",
+        "favtv": "How I Met Your Mother, Dexter",
+        "favbook": "Harry Potter",
+        "favartist": "Taylor Swift",
+        "bio": "Enrolled in the general college. Karley Lynn Rempel is the daughter of Lisa and Tom Rempel. Born April 6, 1993."
             }
     },
     {
@@ -165,7 +241,10 @@
         "hometown": "Pfafftown, NC",
         "highschool": "Reagan High School",
             "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/RU/RUICALSOPFCNZHR.20120820151651.jpg",
-            "pr5k": "15:24"
+            "pr5k": "15:24",
+            "prmile":"5:06",
+            "pr800": "2:29",
+            "bio":"Majoring in nursing. Julie Ryanne Swaim is the daughter of Kimberly Flippin and Jeffrey Swaim. Born March 10, 1993."
             }
     },
     {
@@ -177,7 +256,8 @@
         "year": "So.",
         "hometown": "Toronto, Ontario",
         "highschool": "Branksome Hall",
-            "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/WW/WWOLSLNIXZAFPAD.20121002155045.jpg"
+        "imageURL": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/WW/WWOLSLNIXZAFPAD.20121002155045.jpg",
+        "bio":" Double majoring in studio art and communications. Elizabeth Maryanne Whelan is the daughter of Mike and Maryanne Whelan."
             }
     }
 
