@@ -30,7 +30,8 @@ a.thumbnail p {
 }
 }
 .thumbnail img {
-    max-width:200px
+    max-width:300px;
+    max-height:200px;
 }
 .carousel {
     background-color:#333;
@@ -52,11 +53,15 @@ a.thumbnail p {
     background-color:#f2f2f2;
     width:100%;
 }
+.team-image-row img {
+    display:block;
+    margin: 0 auto;
+}
 .table-schedule {
     display:block;
     margin:0 auto;
 }
-.table-schedule td, th{
+.table-schedule td, .table-schedule th{
     text-align: center;
     padding: 5px 10px 5px 10px;
 }
@@ -64,10 +69,22 @@ a.thumbnail p {
     display:block;
     margin:0 auto;
 }
-.table-coaches td, th{
+.table-coaches td, .table-coaches th{
     text-align: center;
     padding: 5px 10px 5px 10px;
 }
 .table-coaches img {
     max-width:100px;
+    max-height: 100px;
 }
+.table-roster th, .table-roster td{
+    font-size:1.2em;
+    padding: 10px 20px 20px 10px;
+    text-align:center;
+}
+.table-roster {
+    
+}
+/*--------------------------------
+ *Athlete detail template
+ *------------------------------*/
