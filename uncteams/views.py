@@ -24,7 +24,7 @@ def team(request, pk):
     #is this the right call to activate coaches?..
     coach_list = Coach.objects.all()
     athlete_list = Athlete.objects.all()
-    paginator = Paginator(athlete_list, 20)
+    paginator = Paginator(athlete_list, 15)
     page = request.GET.get('page')
     try:
         athletes= paginator.page(page)

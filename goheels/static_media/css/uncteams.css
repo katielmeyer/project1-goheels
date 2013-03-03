@@ -42,8 +42,8 @@ a.thumbnail p {
 .carousel {
     background-color:#333;
 }
-.carousel-caption {
-    height:170px;
+ {
+    
 }
 .home-headlines {
 
@@ -51,6 +51,9 @@ a.thumbnail p {
 .home-headlines p {
     padding-top:5px;
     padding-left:20px;
+}
+.home-carousel .carousel-caption{
+    height:100px;
 }
 /*-------------------------------
  *Team detail template
@@ -94,3 +97,11 @@ a.thumbnail p {
 /*--------------------------------
  *Athlete detail template
  *------------------------------*/
+.athlete-bio img {
+    display:block;
+    margin:0 auto;
+}
+.athlete-bio li {
+    padding-left:20px;
+    list-style: none;
+}

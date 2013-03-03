@@ -50,12 +50,33 @@
     <li><a href="../team/1">Women's Cross Country </a><span class="divider">/</span></li>
     <li class="active">{{ athlete.name }}</li>
 </ul>
-<h2>{{ athlete.name }}</h2>
-<img src="{{ athlete.imageURL }}" alt="{{ athlete.name }} photo"/>
-<ul>
-    <li><strong>Year:</strong> {{ athlete.year }}</li>
-    <li><strong>Hometown:</strong> {{ athlete.hometown }}</li>
-    <li><strong>Highschool:</strong> {{ athlete.highschool }}</li>
-    <li><strong>5k PR:</strong>{{ athlete.pr5k }}</li>
-</ul>
+<div class="row-fluid athlete-bio">
+    <div class="span4">
+        <img src="{{ athlete.imageURL }}" alt="{{ athlete.name }} photo"/>
+    </div>
+    <div class="span8">
+        <h3>{{ athlete.name }}</h3>
+        <ul>
+            <li><strong>Year:</strong> {{ athlete.year }}</li>
+            <li><strong>Hometown:</strong> {{ athlete.hometown }}</li>
+            <li><strong>High school:</strong> {{ athlete.highschool }}</li>
+        </ul>
+        <h4>Personal Records</h4>
+        <ul>
+            <li><strong>5k:</strong> {{ athlete.pr5k }}</li>
+            <li><strong>Mile:</strong> {{ athlete.prmile }}</li>
+            <li><strong>800M:</strong> {{ athlete.pr800 }}</li>
+        </ul>
+        <h4>Bio</h4>
+        <p>{{ athlete.bio }}</p>
+        <ul>
+            <li><strong>Favorite food:</strong> {{ athlete.favfood }}</li>
+            <li><strong>Favorite book:</strong> {{ athlete.favbook }}</li>
+            <li><strong>Favorite band or artist:</strong> {{ athlete.favartist }}</li>
+            <li><strong>Favorite TV shows:</strong> {{ athlete.favtv }}</li>
+        </ul>
+    </div>
+</div>
+
+
 {% endblock %}
