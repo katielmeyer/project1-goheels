@@ -26,9 +26,9 @@
                             <li><a href="#">Track &amp; Field</a></li>
                             <li><a href="#">Wrestling</a></li>
                             <li class="divider"></li>
-                            <li clas="nav-header">Women's Sports</li>
+                            <li class="nav-header">Women's Sports</li>
                             <li><a href="#">Basketball</a></li>
-                            <li class="active"><a href="team/1">Cross Country</a></li>
+                            <li class="active"><a href="{{ team.id }}">Cross Country</a></li>
                             <li><a href="#">Fencing</a></li>
                             <li><a href="#">Field Hockey</a></li>
                             <li><a href="#">Golf</a></li>
@@ -53,9 +53,8 @@
     <li><a href="../../">all sports</a> <span class="divider">/</span></li>
     <li class="active">{{ team.name }}</li>
 </ul>
-<h1>{{ team.name }}</h1>
+<h2>{{ team.name }}</h2>
 <div class="row-fluid team-carousel">
-        <div class="span12">
         <div id="myCarousel" class="carousel slide">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -89,7 +88,6 @@
                 </div>
             </div>
             </div>
-        </div>
         <!-- Carousel nav -->
             <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
             <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
@@ -103,13 +101,13 @@
         <thead>
             <tr><th>Date</th><th>Opponent</th><th>Location</th><th>Time (ET)</th></tr>
         </thead>
-        <tr><td>Fri, Aug 31</td><td>Covered Bridge Open</td><td>Boone, NC</td><td>5:00pm</td></tr>
-        <tr><td>Fri, Sep 14</td><td>adidas Invitational</td><td>Raleigh, NC</td><td>5:15pm</td></tr>
-        <tr><td>Fri, Sep 28</td><td>Notre Dame Invitational</td><td>South Bend, IN</td><td>2:00pm</td></tr>
-        <tr><td>Fri, Oct 12</td><td>Wisconsin Invitational</td><td>Madison, WI</td><td>1:45pm</td></tr>
-        <tr><td>Sat, Oct 27</td><td>ACC Championships</td><td>Blacksburg, VA</td><td>10:00am</td></tr>
-        <tr><td>Sat, Nov 03</td><td>Three Stripe Invitational</td><td>Raleigh, NC</td><td>11:00am</td></tr>
-        <tr><td>Sat, Nov 17</td><td>NCAA Championships</td><td>Louisville, KY</td><td>12:00pm</td></tr>
+        <tr><td>Fri, Aug 31</td><td><a href="#">Covered Bridge Open</a></td><td>Boone, NC</td><td>5:00pm</td></tr>
+        <tr><td>Fri, Sep 14</td><td><a href="#">adidas Invitational</a></td><td>Raleigh, NC</td><td>5:15pm</td></tr>
+        <tr><td>Fri, Sep 28</td><td><a href="#">Notre Dame Invitational</a></td><td>South Bend, IN</td><td>2:00pm</td></tr>
+        <tr><td>Fri, Oct 12</td><td><a href="#">Wisconsin Invitational</a></td><td>Madison, WI</td><td>1:45pm</td></tr>
+        <tr><td>Sat, Oct 27</td><td><a href="#">ACC Championships</a></td><td>Blacksburg, VA</td><td>10:00am</td></tr>
+        <tr><td>Sat, Nov 03</td><td><a href="#">Three Stripe Invitational</a></td><td>Raleigh, NC</td><td>11:00am</td></tr>
+        <tr><td>Sat, Nov 17</td><td><a href="#">NCAA Championships</a></td><td>Louisville, KY</td><td>12:00pm</td></tr>
     </table>
     </div>
     <div class="span6">

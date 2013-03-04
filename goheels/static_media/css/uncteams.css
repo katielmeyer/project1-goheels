@@ -2,21 +2,37 @@
  *Base template
  *--------------------------------*/
 body {
-   /* background-color: #333333;*/
+   background-color: #D3D3D3;
 }
 h1 {
-  
-    margin-left:50px;
+
 }
 .container {
-    /*background-color:#f2f2f2;*/
+    background-color:#ffffff;
     margin: 0 auto;
+    padding:10px;
+    position: relative;
+    top: -19px;
+    box-shadow: 5px 5px 10px #BCBCBC, -5px 0px 10px #BCBCBC;
 }
 .navbar-inner{
     min-height:50px;
 }
+.navbar .container {
+    background-color:inherit;
+    background-image:inherit;
+    padding: inherit;
+    top:inherit;
+    box-shadow: none;
+}
+.navbar .brand {
+    padding-bottom:0px;
+}
 .nav {
-    padding-top:5px;
+    padding-top:25px;
+}
+.nav li {
+    line-height: 30px;
 }
 /*------------------------------
  *Home template
@@ -29,21 +45,20 @@ ul.thumbnails {
 }
 a.thumbnail {
     height: auto;
-    margin-top:20px;
+    margin-top:25px;
 }
 a.thumbnail p {
-    padding: 10px 30px 0 0;
+    padding: 10px 0 0 0;
     text-align:center;
 }
 .thumbnail img {
-    max-width:300px;
     max-height:200px;
 }
 .carousel {
-    background-color:#333;
+    background-color:#222222;
 }
- {
-    
+.twitter-span {
+    border-right: 1px solid #eeeeee;
 }
 .home-headlines {
 
