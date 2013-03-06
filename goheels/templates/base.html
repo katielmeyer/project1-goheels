@@ -7,13 +7,14 @@
             <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet">
             <link href="{{ STATIC_URL }}css/bootstrap-responsive.css" rel="stylesheet">
             <link href="{{ STATIC_URL }}css/uncteams.css" rel="stylesheet">
+            <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
                 {% block scripts %}
                 {% endblock %}
         </head>
     
     
     <body>
-        <div class="navbar">
+        <div class="navbar navbar-inverse">
             <div class="navbar-inner">
             <div class="container">
              
@@ -25,7 +26,11 @@
             </a>
              
             <!-- Be sure to leave the brand out there if you want it shown -->
-            <a class="brand" href="{% url uncteams_home %}"><img src="{{ STATIC_URL }}/img/goheels.png "/ alt="GO HEELS"><p class=".pull-right"><small><em>Official Carolina Athletics</em></small></p></a>
+            <a class="brand" href="{% url uncteams_home %}">
+                <img src="{{ STATIC_URL }}/img/goheels-brand-small.png "/ alt="GO HEELS"/>
+                <p class="brand-goheels">GO HEELS</p>
+                <p class="brand-tagline"><small><em>Official Carolina Athletics</em></small></p>
+            </a>
              
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">

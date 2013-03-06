@@ -21,7 +21,6 @@ def home(request):
 
 def team(request, pk):
     team = get_object_or_404(Team, id=pk)
-    #is this the right call to activate coaches?..
     coach_list = Coach.objects.all()
     athlete_list = Athlete.objects.all()
     paginator = Paginator(athlete_list, 15)

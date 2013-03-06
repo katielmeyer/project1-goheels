@@ -4,8 +4,28 @@
 body {
    background-color: #D3D3D3;
 }
-h1 {
+h1, h2, h3, h4 {
+    font-family: 'Fjalla One', "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+h4 > a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.brand-goheels {
+    display: inline;
+    font-family: 'Fjalla One', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 34px;
+    position: relative;
+    top: 10px;
+    color: rgb(211, 223, 231);
+}
+.brand-tagline {
+    display:block;
+    color: rgba(211, 223, 231, 0.67);
+}
 
+.brand:hover,
+.navbar-inverse .brand:focus{
+  color: rgb(255, 255, 255);
 }
 .container {
     background-color:#ffffff;
@@ -83,6 +103,15 @@ a.thumbnail p {
 .home-carousel .carousel-caption{
     height:100px;
 }
+.home-headlines {
+    margin-bottom:30px;
+}
+.home-teasers .span4{
+    border-radius: 10px;
+    background-color:#fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+}
 .home-teasers img{
     max-width:200px;
     display:block;
@@ -90,8 +119,9 @@ a.thumbnail p {
 }
 .home-teasers h2, .home-teasers a {
     text-align:center;
-    color:#333;
+    color:#777;
 }
+
 .home-sports h1 {
     padding-left:100px;
 }
@@ -131,8 +161,13 @@ a.thumbnail p {
     padding: 5px 25px 5px 25px;
     text-align:center;
 }
+.table-roster tr:nth-child(even) {
+    background-color: rgba(224, 222, 222, 0.34);
+}
 .breadcrumb {
     background-color:#ffffff;
+    padding-bottom:5px;
+    margin-bottom:5px;
 }
 .breadcrumb a {
     color:#5BAAE0;
@@ -144,9 +179,17 @@ a.thumbnail p {
 /*--------------------------------
  *Athlete detail template
  *------------------------------*/
+.athlete-bio {
+    padding-top:40px;
+    padding-bottom:30px;
+}
 .athlete-bio img {
     display:block;
     margin:0 auto;
+    box-shadow: 2px 5px 10px #333;
+}
+.athlete-bio-info {
+    margin: 0;
 }
 .athlete-bio li {
     padding-left:40px;
@@ -161,4 +204,8 @@ a.thumbnail p {
 }
 .athlete-bio h4 {
     padding-left:40px;
+    color:#777;
+}
+.news-sidebar .span2{
+    margin-left:4%
 }

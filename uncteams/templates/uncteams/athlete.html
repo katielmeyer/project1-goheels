@@ -56,7 +56,7 @@
     </div>
     <div class="span8">
         <h3>{{ athlete.name }}</h3>
-        <ul>
+        <ul class="athlete-bio-info">
             <li><strong>Year:</strong> {{ athlete.year }}</li>
             <li><strong>Hometown:</strong> {{ athlete.hometown }}</li>
             <li><strong>High school:</strong> {{ athlete.highschool }}</li>
@@ -78,19 +78,68 @@
     </div>
 </div>
 <hr/>
-<div class="row-fluid home-teasers">
-    <div class="span4">
-        <a href="#"><img src="{{ STATIC_URL }}img/teaser-ticket.png" alt=""/></a>
-        <h2><small><a href="#"><strong>TICKET CENTER ></strong></a></small></h2>
-    </div>
-    <div class="span4">
-        <a href="#"><img src="{{ STATIC_URL }}img/teaser-market.png" alt=""/></a>
-        <h2><small><a href="#"><strong>STORE ></strong></a></small></h2>
-    </div>
-    <div class="span4">
-        <a href="#"><img src="{{ STATIC_URL }}img/teaser-logo.png" alt=""/></a>
-        <h2><small><a href="#"><strong>THE RAMS CLUB ></strong></a></small></h2>
-    </div>
+<div class="row-fluid news-sidebar">
+        <h3>Recent news</h3>
+        <div class="span2">
+            <img src="{{ STATIC_URL }}img/goheels-slider1.jpg" alt="slider"/>
+            <h4>Tar Heels Beat Tigers, 68-59</h4>
+                      <p>North Carolina reached the 20-win mark for the ninth straight
+                      season with a 68-59 victory over Clemson on Thursday night.</p>
+                      <ul>
+	            	<li><a href="#">Box Score</a>
+			</li>
+	            	<li><a href="#">Watch Highlights</a>
+			</li>
+                        <li><a href="#">Postgame Notes</a>
+			</li>
+                      </ul>
+        </div>
+        <div class="span2">
+            <img src="{{ STATIC_URL }}img/goheels-slider2.jpg" alt="slider"/>
+                      <h4>UNC Tops Eagles 85-57 On Senior Night</h4>
+                      <p>Seniors Tierra Ruffin-Pratt and Waltiea Rolle led the North Carolina
+                      women's basketball in its 85-57
+                      victory over Boston College in Carmichael Arena on Thursday night.</p>
+                    <ul>
+                        <li><a href="#">Box Score</a>
+			</li>
+	            	<li><a href="#">Watch Highlights</a>
+			</li>
+                        <li><a href="#">Postgame Notes</a>
+			</li>
+                    </ul>
+        </div>
+        <div class="span2">
+            <img src="{{ STATIC_URL }}img/goheels-slider3.jpg" alt="slider"/>
+                      <h4>Tough Tests Await No. 1 Heels In Houston</h4>
+                      <p>No. 1 North Carolina heads to Houston, Texas for the Astros Foundation
+                      College Classic with matchups against
+                      No. 12 Rice, California and No. 30 Texas A&M.</p>
+                      <ul>
+                        <li><a href="#">Astros Foundation College Classic</a></li>
+                      </ul>
+        </div>
+        <div class="span2">
+            <img src="{{ STATIC_URL }}img/goheels-slider4.jpg" alt="slider"/>
+                      <h4>Carolina Heads To No. 2 Notre Dame</h4>
+                      <p>North Carolina's men's lacrosse team will face its biggest challenge
+                      of the 2013 season to date when it plays at
+                      second-ranked Notre Dame Saturday at 12 noon.</p>
+                      <ul>
+                        <li><a href="#">UNC-Notre Dame Gametracker</a></li>
+                        <li><a href="#">2013 UNC Media Guide</a></li>
+                        <li><a href="#">2013 UNC Stats</a></li>
+                      </ul>
+        </div>
+        <div class="span2">
+            <img src="http://www.goheels.com/pics32/640/RK/RKNGWSYMLWLDLGM.20130104154542.jpg" alt="slider"/>
+                      <h4>Bracy Will Run With USATF Saturday</h4>
+                      <p>Addie Bracy, a former distance runner and volunteer coach at Carolina, has made the
+                      USA Track & Field senior women's team and will compete in Scotland on Saturday.</p>
+                      <p><a href="#">Read more.</a></p>
+                </div>
+        </div>
+   </div>
 </div>
 
 {% endblock %}
