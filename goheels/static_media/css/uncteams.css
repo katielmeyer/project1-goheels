@@ -26,13 +26,25 @@ h1 {
     box-shadow: none;
 }
 .navbar .brand {
-    padding-bottom:0px;
+    padding:0px 45px 0px 0px;
 }
 .nav {
-    padding-top:25px;
+    padding-top:5px;
 }
 .nav li {
-    line-height: 30px;
+    line-height: 50px;
+    font-size:1.2em;
+}
+.dropdown-menu li, .dropdown-menu li.nav-header {
+    font-size:.7em;
+    line-height:20px;
+}
+.navbar .caret {
+    position:relative;
+    top:13px;
+}
+.navbar-search {
+    margin-top:20px;
 }
 /*------------------------------
  *Home template
@@ -56,8 +68,9 @@ a.thumbnail p {
 }
 .carousel {
     background-color:#222222;
+    box-shadow: 0px 1px 10px;
 }
-.twitter-span {
+.twitter-span, .schedule-span {
     border-right: 1px solid #eeeeee;
 }
 .home-headlines {
@@ -69,6 +82,18 @@ a.thumbnail p {
 }
 .home-carousel .carousel-caption{
     height:100px;
+}
+.home-teasers img{
+    max-width:200px;
+    display:block;
+    margin: 0 auto;
+}
+.home-teasers h2, .home-teasers a {
+    text-align:center;
+    color:#333;
+}
+.home-sports h1 {
+    padding-left:100px;
 }
 /*-------------------------------
  *Team detail template
@@ -106,8 +131,15 @@ a.thumbnail p {
     padding: 5px 25px 5px 25px;
     text-align:center;
 }
-.table-roster {
-    
+.breadcrumb {
+    background-color:#ffffff;
+}
+.breadcrumb a {
+    color:#5BAAE0;
+}
+.step-links {
+    color:#56A0D3;
+    padding-right:100px;
 }
 /*--------------------------------
  *Athlete detail template
@@ -117,6 +149,16 @@ a.thumbnail p {
     margin:0 auto;
 }
 .athlete-bio li {
-    padding-left:20px;
+    padding-left:40px;
     list-style: none;
+}
+.athlete-bio p {
+    padding-left:60px;
+    padding-right:50px;
+}
+.athlete-bio h3{
+    margin:0;
+}
+.athlete-bio h4 {
+    padding-left:40px;
 }
