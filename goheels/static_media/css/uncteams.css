@@ -1,8 +1,23 @@
-/*------------------------------
+/*
+**go heels: Official Carolina Athletics
+**by Katie Meyer
+**2013 March 07
+**UNC Teams app template styles
+*/
+
+/*-------------------------------------
  *Base template
- *--------------------------------*/
+ *-------------------------------------*/
 body {
-   background-color: #D3D3D3;
+	background-color: #D3D3D3;
+}
+.container {
+    background-color:#ffffff;
+	box-shadow: 5px 5px 10px #BCBCBC, -5px 0px 10px #BCBCBC;
+    margin: 0 auto;
+    padding:10px;
+    position: relative;
+    top: -19px;
 }
 h1, h2, h3, h4 {
     font-family: 'Fjalla One', "Helvetica Neue", Helvetica, Arial, sans-serif; 
@@ -10,46 +25,22 @@ h1, h2, h3, h4 {
 h4 > a {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.brand-goheels {
-    display: inline;
-    font-family: 'Fjalla One', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 34px;
-    position: relative;
-    top: 10px;
-    color: rgb(211, 223, 231);
-}
-.brand-tagline {
-    display:block;
-    color: rgba(211, 223, 231, 0.67);
-}
-
-.brand:hover,
-.navbar-inverse .brand:focus{
-  color: rgb(255, 255, 255);
-}
-.container {
-    background-color:#ffffff;
-    margin: 0 auto;
-    padding:10px;
-    position: relative;
-    top: -19px;
-    box-shadow: 5px 5px 10px #BCBCBC, -5px 0px 10px #BCBCBC;
-}
-.navbar-inner{
-    min-height:50px;
+/*Nav bar */
+.nav {
+    padding-top:5px;
 }
 .navbar .container {
     background-color:inherit;
     background-image:inherit;
+    box-shadow: none;
     padding: inherit;
     top:inherit;
-    box-shadow: none;
 }
-.navbar .brand {
-    padding:0px 45px 0px 0px;
+.navbar-inner{
+    min-height:50px;
 }
-.nav {
-    padding-top:5px;
+.navbar-search {
+    margin-top:20px;
 }
 .nav li {
     line-height: 50px;
@@ -63,49 +54,50 @@ h4 > a {
     position:relative;
     top:13px;
 }
-.navbar-search {
-    margin-top:20px;
+/*Brand logo */
+.navbar .brand {
+    padding:0px 45px 0px 0px;
 }
-/*------------------------------
- *Home template
- *--------------------------------*/
-ul.thumbnails {
-    display: block;
-    margin: 0 auto;
+.brand-goheels {
+	color: rgb(211, 223, 231);
+    display: inline;
+    font-family: 'Fjalla One', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 34px;
     position: relative;
-    left: 10%;
+    top: 10px;
 }
-a.thumbnail {
-    height: auto;
-    margin-top:25px;
+.brand-tagline {
+    color: rgba(211, 223, 231, 0.67);
+	display:block;
 }
-a.thumbnail p {
-    padding: 10px 0 0 0;
-    text-align:center;
+.brand:hover,
+.navbar-inverse .brand:focus{
+  	color: rgb(255, 255, 255);
 }
-.thumbnail img {
-    max-height:200px;
-}
+
+/*-----------------------------------------
+ *Home template
+ *-----------------------------------------*/
+/*Carousel*/
 .carousel {
     background-color:#222222;
     box-shadow: 0px 1px 10px;
 }
+.home-carousel .carousel-caption{
+    height:100px;
+}
+/*Twitter feed & headlines */
 .twitter-span, .schedule-span {
     border-right: 1px solid #eeeeee;
 }
 .home-headlines {
-
+    margin-bottom:30px;
 }
 .home-headlines p {
     padding-top:5px;
     padding-left:20px;
 }
-.home-carousel .carousel-caption{
-    height:100px;
-}
-.home-headlines {
-    margin-bottom:30px;
-}
+/*Teasers*/
 .home-teasers .span4{
     border-radius: 10px;
     background-color:#fff;
@@ -121,13 +113,41 @@ a.thumbnail p {
     text-align:center;
     color:#777;
 }
-
+/*Sports thumbnails*/
 .home-sports h1 {
     padding-left:100px;
 }
+ul.thumbnails {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 10%;
+}
+.thumbnail img {
+    max-height:200px;
+}
+a.thumbnail {
+    height: auto;
+    margin-top:25px;
+}
+a.thumbnail p {
+    padding: 10px 0 0 0;
+    text-align:center;
+}
+
 /*-------------------------------
  *Team detail template
  *------------------------------*/
+/*breadcrumb*/
+.breadcrumb {
+    background-color:#ffffff;
+    padding-bottom:5px;
+    margin-bottom:5px;
+}
+.breadcrumb a {
+    color:#5BAAE0;
+}
+/*Team image */
 .team-image-row {
     background-color:#f2f2f2;
     width:100%;
@@ -136,6 +156,7 @@ a.thumbnail p {
     display:block;
     margin: 0 auto;
 }
+/*Team schedule table*/
 .table-schedule {
     display:block;
     margin:0 auto;
@@ -144,6 +165,7 @@ a.thumbnail p {
     text-align: center;
     padding: 5px 10px 5px 10px;
 }
+/*Coaches table*/
 .table-coaches {
     display:block;
     margin:0 auto;
@@ -156,6 +178,7 @@ a.thumbnail p {
     max-width:100px;
     max-height: 100px;
 }
+/*Roster table of athletes*/
 .table-roster th, .table-roster td{
     font-size:1.2em;
     padding: 5px 25px 5px 25px;
@@ -164,18 +187,11 @@ a.thumbnail p {
 .table-roster tr:nth-child(even) {
     background-color: rgba(224, 222, 222, 0.34);
 }
-.breadcrumb {
-    background-color:#ffffff;
-    padding-bottom:5px;
-    margin-bottom:5px;
-}
-.breadcrumb a {
-    color:#5BAAE0;
-}
-.step-links {
+.step-links {/*style for pagination*/
     color:#56A0D3;
     padding-right:100px;
 }
+
 /*--------------------------------
  *Athlete detail template
  *------------------------------*/
@@ -206,6 +222,6 @@ a.thumbnail p {
     padding-left:40px;
     color:#777;
 }
-.news-sidebar .span2{
+.news-sidebar .span2{/*recent news stories under athlete bio*/
     margin-left:4%
 }

@@ -1,5 +1,11 @@
+<!--
+athlete detail template: uncteams/templates/uncteams/athlete.html
+2013 March 07
+-->
+
 {% extends "base.html" %}
-    
+
+<!--navigation-->
 {% block nav %}
     <li class="dropdown active pull-left">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -23,7 +29,7 @@
                             <li class="divider"></li>
                             <li class="nav-header">Women's Sports</li>
                             <li><a href="#">Basketball</a></li>
-                            <li class="active"><a href="team/1">Cross Country</a></li>
+                            <li class="active"><a href="../team/1">Cross Country</a></li>
                             <li><a href="#">Fencing</a></li>
                             <li><a href="#">Field Hockey</a></li>
                             <li><a href="#">Golf</a></li>
@@ -43,6 +49,8 @@
                     <li><a href="#">Media</a></li>
                     <li><a href="#">Fan Center</a></li>
 {% endblock %}
+
+<!--main content-->
 {% block content %}
 
 <ul class="breadcrumb">
